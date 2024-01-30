@@ -1,21 +1,21 @@
-const ShowInfo = () => {
+const ShowInfo = ({good}) => {
     
     return (
-        <>
+    
         
         
     
+        <div style={{display: "flex", flexDirection: "column" }}>
         <h2>Statistics</h2>
         
-            <div style={{display: "flex", flexDirection: "column" }}>
+           
  
-           <span>Good: 3</span>     
+           <span>{`Good: ${good}` }</span>     
            <span>Neutral: 3</span>     
            <span>Bad: 3</span>     
 
         </div>
 
-        </>
 
     )
 
