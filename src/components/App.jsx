@@ -47,8 +47,9 @@ class App extends Component {
 
  <p>Please leave feedback</p>
           <FeedbackOptions
-            estado={this.state}
-            handleIncrement={this.handleIncrement}
+          estado={ this.state}
+          handleIncrement={this.handleIncrement} // en este caso se pasa una referencia de funcion, no se llama en ese momento a la funcion.
+          // la funcion se llama desde el componente hijo en donde se utiliza un manejador de eventos onClick que hace el llamado a la funcion
             />
       
 
