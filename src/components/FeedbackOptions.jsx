@@ -1,12 +1,13 @@
 import AddBtn from "./AddBtn";
 
+
 const FeedbackOptions = ({estado, handleIncrement}) => {
     
     return ( // renderizado del compoente
         <>
         
  {Object.entries(estado).map(([key, value]) => (
-            <AddBtn
+            <AddBtn className= "Container"
               key={key}
               addOne={() => handleIncrement(key)}
               count={value}

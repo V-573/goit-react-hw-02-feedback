@@ -41,11 +41,11 @@ class App extends Component {
     
         
      
-        <Section>
+        <Section title="Please leave feedback">
 
 
 
- <p>Please leave feedback</p>
+ 
           <FeedbackOptions
           estado={ this.state}
           handleIncrement={this.handleIncrement} // en este caso se pasa una referencia de funcion, no se llama en ese momento a la funcion.
@@ -62,7 +62,9 @@ class App extends Component {
             />
 
         
-        </Section>
+      </Section>
+     
+
         );
 }
 }

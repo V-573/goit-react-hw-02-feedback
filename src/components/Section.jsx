@@ -1,6 +1,6 @@
-const Section = ({children}) => {
+const Section = ({children, title}) => {
     
-    return <div className= "section"> {children}</div>
+    return <div className="section"><p>{title}</p> {children}</div>
 
 };
 
